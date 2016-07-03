@@ -18,6 +18,10 @@ postgres:
     - "5432:5432"
   env_file:
     - postgres.env
+ircd:
+  build: ../docker-ircd
+  ports:
+    - "6667:6667"
 ircdc:
   build: ../ircdc
   ports:
