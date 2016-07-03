@@ -26,6 +26,11 @@ This includes:
 * Kafka
 * Postgres
 
+```
+chmod +x start-services.sh
+./start-services.sh
+```
+
 ## Miscellaneous
 
 [LICENSE](../blob/master/LICENSE)
