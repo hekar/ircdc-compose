@@ -35,8 +35,7 @@ sudo docker compose up
 Run only the services required by [ircdc](https://github.com/hekar/ircdc). Useful for development environments where you want to run [ircdc](https://github.com/hekar/ircdc) and/or [ircdc-react](https://github.com/hekar/ircdc-react) locally.
 
 This includes:
-* [Zookeeper](https://zookeeper.apache.org/)
-* [Kafka](https://kafka.apache.org/)
+* [RabbitMQ](https://www.rabbitmq.com/)
 * [Postgres](https://www.postgresql.org/)
 * [Ngircd](http://ngircd.barton.de/download.php.en)
 
