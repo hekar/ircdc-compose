@@ -17,6 +17,7 @@ Clone the required repositories:
 ```
 git clone git@github.com:hekar/ircdc.git
 git clone git@github.com:hekar/ircdc-react.git
+git clone git@github.com:hekar/ircdc-tui.git
 git clone git@github.com:hekar/docker-ircd.git
 git clone git@github.com:hekar/node-irc.git
 git clone git@github.com:hekar/ircdc-compose.git && cd ircdc-compose

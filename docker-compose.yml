@@ -1,17 +1,13 @@
-zookeeper:
-  image: jplock/zookeeper
+rabbitmq:
+  image: rabbitmq:3-management
+  hostname: rabbitmq
+  restart: always
   ports:
-    - "2181:2181"
-kafka:
-  image: ches/kafka
-  links:
-    - "zookeeper:zookeeper"
-  ports:
-    - "9092:9092"
-    - "7203:7203"
-  volumes:
-    - "./data:/data"
-    - "./logs:/logs"
+    - "5672:5672"
+    - "15672:15672"
+  environment:
+    - "RABBITMQ_DEFAULT_USER=admin"
+    - "RABBITMQ_DEFAULT_PASS=admin"
 postgres:
   image: postgres
   ports:
